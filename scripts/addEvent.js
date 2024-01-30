@@ -16,3 +16,7 @@ function mySecondFunction() {
 function myThirdFunction() {
     document.getElementById('demo').textContent = 'Moused out!';
 }
+
+function myFourthFunction() {
+    document.get
+}

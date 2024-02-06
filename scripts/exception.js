@@ -6,7 +6,7 @@ window.onload = function() {
         let x = document.getElementById("demo").value;
         try {
             if(x == "") throw 'empty';
-            if(isNan(x)) throw 'not a number';
+            if(isNaN(x)) throw 'not a number';
             x = Number(x);
             if(x < 5) throw 'too low';
             if(x > 10) throw 'too high';
@@ -19,7 +19,7 @@ window.onload = function() {
                 message.textContent = "Input " + err;
             }
         }
-        finally {
+        finally { // executes regardless of whether there is an error
             document.getElementById("demo").value = '';
         }
     }

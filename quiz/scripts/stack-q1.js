@@ -5,6 +5,14 @@ class PStack {
     this._persons = [];
   }
 
+  get persons() {
+    return this._persons;
+  }
+
+  set persons(p) {
+    this._persons = p;
+  }
+
   showId() {
     return this.#id;
   }
@@ -17,11 +25,11 @@ class PStackImpl extends PStack {
   }
 
   push(p) {
-    return this._persons.push(p)
+    return this.persons.push(p)
   }
 
   pop() {
-    return this._persons.pop().age
+    return this.persons.pop().age
   }
 }
 
